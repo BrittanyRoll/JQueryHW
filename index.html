@@ -1,31 +1,261 @@
-<!DOCTYPE html>
-<html>
+<!Doctype html>
+<html lang = "en-US">
 <head>
-	<title>Cheat Sheet</title>
+<title>NOW</title>
+<link rel="stylesheet" type="text/css" href="now12.css">
+<script type="text/javascript" src="now12.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<div class="menu">
+  <nav class="menu">
+  <div class="drop">
+
+    <button type="button" class="dropbtn"  onClick="openNav()"><img src="http://gdiving.com/wp-content/uploads/2016/08/taxes-menu-icon.png"  height="30" width="30"></button>
+
+  <span id="dropcontent">
+    <button type="button" class="b1" onclick="closeNav()">x</button>
+    <h6>Tasks</h6>
+    <ul class="todo">
+      <span onclick="newElement()" class="addBtn">Add</span>
+      <input type="text" id="myInput" placeholder="Add to the list!">
+      </ul>
+
+        <ul id="list">
+            <li style="margin-left: 38px;"><b>To Do</b><li>
+        </ul>
+    </span>
+</div>
+<div class="links" id="links">
+  <ul>
+    <li><a href="#cals">Calendars</a></li>
+    <li><a href="">Meditation</a></li>
+    <li><a href="">Progress</a></li>
+    <li><a href="">Stay Connected</a></li>
+    <li><a href="#aboutus">About US</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+</div>
+
+
 </head>
+
+
 <body>
-	<h1>Mum</h1>
-	<h2>Mum!</h2>
-	<h3>Mummy!</h3>
-	<h4>Mumma!</h4>
-	<h5>Lois!</h5>
+<div>
+<p id="logo">NOW</p>
+</div>
 
-	<nav>
-		<ul>
-			<li><a href="#">Hey</a></li>
-			<li><a href="#">How</a></li>
-			<li><a href="#">Are</a></li>
-			<li><a href="#">You?</a></li>
-		</ul>
-	</nav>
 
-	<p>HI</p>
+<div class="cals" id="cals">
+<p id="d" class="d"><a href="#day">DAILY</a></p>
+<p id="w" class="w"><a href="">WEEKLY</a></p>
+<p id="m" class="m"><a href="#mo">MONTHLY</a></p>
+</div>
 
-	<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Standardchinchilla.jpg">
-	
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="main.js"></script>
+
+
+<h1 style="text-align: center; font-family: 'Raleway'; font-size: 50px;" id="day">DAILY CALENDAR</h1>
+
+
+
+
+<div class="clock" id="clock">
+  <div class="clock-face">
+    <div class="hand hour-hand" style="transform: rotate(720deg);"></div>
+    <div class="hand min-hand" style="transform: rotate(414deg);"></div>
+    <div class="hand second-hand" style="transform: rotate(96deg);"></div>
+    <div class="circle"></div>
+    <div class="twelve dash" id="twelve dash"></div>
+    <div class="six dash" id="six dash"></div>
+    <div class="three dash" id="nine dash"></div>
+    <div class="nine dash" id="three dash"></div>
+   <div class="one dash" id="one dash"></div>
+    <div class="eight dash" id="eight dash"></div>
+    <div class="two dash" id="two dash"></div>
+    <div class="seven dash" id="seven dash"></div>
+    <div class="four dash" id="four dash"></div>
+    <div class="five dash" id="five dash"></div>
+    <div class="eleven dash" id="eleven dash"></div>
+    <div class="ten dash" id="ten dash"></div>
+    <div class="date">AM</div>
+  </div>
+</div>
+
+<div class="clock" id="clock2">
+  <div class="clock-face">
+    <div class="hand hour-hand" style="transform: rotate(720deg);"></div>
+    <div class="hand min-hand" style="transform: rotate(414deg);"></div>
+    <div class="hand second-hand" style="transform: rotate(96deg);"></div>
+    <div class="circle"></div>
+    <div class="twelve dash" id="twelve dash2"></div>
+    <div class="six dash" id="six dash2"></div>
+    <div class="nine dash" id="nine dash2"></div>
+    <div class="three dash" id="three dash2"></div>
+   <div class="one dash" id="one dash2"></div>
+    <div class="eight dash" id="eight dash2"></div>
+    <div class="two dash" id="two dash2"></div>
+    <div class="seven dash" id="seven dash2"></div>
+    <div class="four dash" id="four dash2"></div>
+    <div class="five dash" id="five dash2"></div>
+    <div class="eleven dash" id="eleven dash2"></div>
+    <div class="ten dash" id="ten dash2"></div>
+    <div class="date">PM</div>
+  </div>
+</div>
+
+<button type="button" id="myButton" onclick="splitTime()">Click me!</button>
+
+<div class="up2">
+  <p>
+  <a href="#links"><img class="upto2"src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-256.png" height="42" width="42"></a>
+  <a href="#mo"> <img class="downto2" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png" height="42" width="42"> </a>
+  <p>
+</div>
+
+
+
+<h1 style="text-align: center; font-family: 'Raleway'; font-size: 50px;" id="mo">MONTHLY CALENDAR</h1>
+
+<div class="month">
+  <ul>
+    <li style="text-align:center">
+      August<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li id="one"><span id="hi">1</span></li>
+  <li id="two"><span id="hi2">2</span></li>
+  <li id="three"><span id="hi3">3</span></li>
+  <li id="four"><span id="hi4">4</span></li>
+  <li id="five"><span id="hi5">5</span></li>
+  <li id="six"><span id="hi6">6</span></li>
+  <li id="seven"><span id="hi7">7</span></li>
+  <li id="eight"><span id="hi8">8</span></li>
+  <li id="nine"><span id="hi9">9</span></li>
+  <li id="ten"><span id="hi10">10</span></li>
+  <li id="eleven"><span id="hi11">11</span></li>
+  <li id="twelve"><span id="hi12">12</span></li>
+  <li id="thirteen"><span id="hi13">13</span></li>
+  <li id="fourteen"><span id="hi14">14</span></li>
+  <li id="fifteen"><span id="hi15">15</span></li>
+  <li id="sixteen"><span id="hi16">16</span></li>
+  <li id="seventeen"><span id="hi17">17</span></li>
+  <li id="eighteen"><span id="hi18">18</span></li>
+  <li id="nineteen"><span id="hi19">19</span></li>
+  <li id="twenty"><span id="hi20">20</span></li>
+  <li id="twenty-one"><span id="hi21">21</span></li>
+  <li id="twenty-two"><span id="hi22">22</span></li>
+  <li id="twenty-three"><span id="hi23">23</span></li>
+  <li id="tweny-four"><span id="hi24">24</span></li>
+  <li id="twenty-five"><span id="hi25">25</span></li>
+  <li id="twenty-six"><span id="hi26">26</span></li>
+  <li id="twenty-seven"><span id="hi27">27</span></li>
+  <li id="twenty-eight"><span id="hi28">28</span></li>
+  <li id="twenty-nine"><span id="hi29">29</span></li>
+  <li id="thirty"><span id="hi30">30</span></li>
+  <li id="thrity-one"><span id="hi31">31</span></li>
+</ul>
+
+<p class="mon">
+ What date has an important task?
+</p>
+<select id="mon">
+  <option value="day1">1</option>
+  <option value="day2">2</option>
+  <option value="day3">3</option>
+  <option value="day4">4</option>
+  <option value="day5">5</option>
+  <option value="day6">6</option>
+  <option value="day7">7</option>
+  <option value="day8">8</option>
+  <option value="day9">9</option>
+  <option value="day10">10</option>
+  <option value="day11">11</option>
+  <option value="day12">12</option>
+  <option value="day13">13</option>
+  <option value="day14">14</option>
+  <option value="day15">15</option>
+  <option value="day16">16</option>
+  <option value="day17">17</option>
+  <option value="day18">18</option>
+  <option value="day19">19</option>
+  <option value="day20">20</option>
+  <option value="day21">21</option>
+  <option value="day22">22</option>
+  <option value="day23">23</option>
+  <option value="day24">24</option>
+  <option value="day25">25</option>
+  <option value="day26">26</option>
+  <option value="day27">27</option>
+  <option value="day28">28</option>
+  <option value="day29">29</option>
+  <option value="day30">30</option>
+  <option value="day31">31</option>
+</select>
+
+<button class="activat" onclick="acti()">ADD</button>
+<button class="deactivat" onclick="deacti()">DELETE</button>
+
+<div class="up">
+  <p>
+    <a href="#links"><img class="upto"src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-256.png" height="42" width="42"></a>
+    <a href="#aboutus"> <img class="downto" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png" height="42" width="42"> </a>
+    <p>
+</div>
+
+<div id="aboutus">
+<h1 style="text-align: center; font-family: 'Raleway'; font-size: 50px;" class="aboutus">ABOUT US</h1>
+<img src="http://www.paykum.com/index-images/about-us.png" height="200" width="200">
+<h1 id="desc">Group Description:</h1>
+<p id="d3">Hi guys! Our names are Tafani, Meghan, Orli, Brittany, and Sylvia. We are a
+group of four girls who participated in a Girls Who Code program at Moody's over
+the summer.  Towards the end of the program we had to make  a final project about
+any idea/topic that we chose. Luckily, we all had the same idea in mind; time
+management! Us four girls feel like this is a big issue that many people go through,
+but just don't act upon it. a website like this would raise the topic and address it
+more and help those who could really use it. So we all thought that A few weeks later,
+this website was created and is continuously being updated.
+</p>
+
+<h1 id="desc1">Misson:</h1>
+<p id="d1">The whole meaning behind this website is to aid all ages and all people who
+suffer through busy schedules and stress related situations. We too understand
+because sometimes we don't manage our time well and resulting in unwanted stress.
+The goal was to help the user stay organized and put together so they can focus
+better on their work and other activites. We really hope this changes and/or
+effect someones life postively.</p>
+
+ <h1 id="desc2">Contact Information:</h1>
+ <p id="d2">If you would like to contact any one of us, please feel free to use our email listed below:
+   "email: nowapp.gwc@gmail.com". We will try out best to answer you as soon as possible.
+</p>
+</div>
+
+<div class="up3">
+  <p>
+  <a href="#links"><img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-256.png" height="42" width="42"></a>
+  <p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 
 </body>
 </html>
